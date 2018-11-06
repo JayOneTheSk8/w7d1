@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Store from './store/store';
-import { receiveTodo, receiveTodos } from './actions/todo_actions';
+import { receiveTodo, receiveTodos, fetchTodos } from './actions/todo_actions';
 import Root from './components/root';
 import { allTodos } from './reducers/selectors';
-import { fetchTodos } from './util/todo_api_util';
+// import { fetchTodos } from './util/todo_api_util';
+// import { thunk } from './middleware/thunk';
 
 
 document.addEventListener('DOMContentLoaded', () => {
